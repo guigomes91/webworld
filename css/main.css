@@ -22,7 +22,7 @@ main {
   width: 70%;
 }
 .redes-sociais ul li {
-  margin-left: 20px;
+  margin-left: 25px;
   display: inline-block;
   float: left;
 }
@@ -44,6 +44,13 @@ main {
   display: inline-block;
   color: #8b8b8b;
   margin-left: 15px;
+  height: 50px;
+}
+.menu ul li:hover {
+  border-bottom: 3px solid #00bac6;
+}
+.menu ul li a:hover {
+  color: #00bac6;
 }
 .menu ul li a {
   color: #8b8b8b;
@@ -74,4 +81,58 @@ main {
   width: 100%;
   float: left;
   position: relative;
+}
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  height: 51px;
+  width: 25px;
+  background-color: transparent;
+  background-image: url("../img/anterior.png");
+  position: absolute;
+  z-index: 9;
+  top: 35%;
+  left: 14%;
+}
+
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  height: 51px;
+  width: 25px;
+  background-color: transparent;
+  background-image: url("../img/proximo.png");
+  position: absolute;
+  z-index: 9;
+  top: 35%;
+  right: 14%;
+}
+.slick-list {
+  width: 100% !important;
+}
+.slick-initialized {
+  overflow: hidden;
+}
+.slick-dots li button {
+  font-size: 0px;
+  border: 5px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slick-dots {
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 550px;
+}
+.slick-dots li {
+  padding-left: 10px;
+  display: inline-block;
+}
+li.slick-active button {
+  background: #00bac6;
 }
